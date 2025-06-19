@@ -1,0 +1,39 @@
+{
+  "update_time": "2025-06-19T15:51:37Z",
+  "categories": {
+    "jailbreaks": {
+      "description": "LLM Jailbreaks",
+      "count": 1,
+      "files": [
+        {
+          "file_name": "dan_20250619.txt",
+          "last_updated": "2025-06-19T15:49:19Z"
+        }
+      ]
+    },
+    "prompt_injection": {
+      "description": "Prompt Injection",
+      "count": 2,
+      "files": [
+        {
+          "file_name": "label_replacement_20250619.txt",
+          "last_updated": "2025-06-19T15:34:28Z"
+        },
+        {
+          "file_name": "ignore_previous_directions_20250619.txt",
+          "last_updated": "2025-06-19T15:39:10Z"
+        }
+      ]
+    },
+    "system_prompt": {
+      "description": "System Prompt",
+      "count": 1,
+      "files": [
+        {
+          "file_name": "kali_gpt_20250619.txt",
+          "last_updated": "2025-06-19T15:02:56Z"
+        }
+      ]
+    }
+  }
+}
