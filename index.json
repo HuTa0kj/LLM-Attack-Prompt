@@ -1,5 +1,5 @@
 {
-  "update_time": "2025-06-20T10:18:47Z",
+  "update_time": "2025-06-20T10:40:16Z",
   "categories": {
     "jailbreaks": {
       "description": "LLM Jailbreaks",
@@ -47,8 +47,12 @@
     },
     "system_prompt": {
       "description": "System Prompt",
-      "count": 1,
+      "count": 2,
       "files": [
+        {
+          "file_name": "safe_bot_20250620.txt",
+          "last_updated": "2025-06-20T10:28:11Z"
+        },
         {
           "file_name": "kali_gpt_20250619.txt",
           "last_updated": "2025-06-19T15:02:56Z"

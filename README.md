@@ -40,13 +40,17 @@ The content in this repository is provided for educational and research purposes
 #### Jailbreaks
 
 + [Directive 7.0](./jailbreaks/directive_7.0_20250620.txt)
-+ [Evil Writer](./jailbreaks/evil_writer_20250620.txt)
 + [Recursive Mirror](./jailbreaks/recursive_mirror_20250620.txt)
++ [Evil Writer](./jailbreaks/evil_writer_20250620.txt)
 + [Sophia](./jailbreaks/sophia_20250620.txt)
 
 #### Prompt Injection
 
 + [Output All](./prompt_injection/output_all_20250620.txt)
+
+#### System Prompt
+
++ [Safe Bot](./system_prompt/safe_bot_20250620.txt)
 
 ### 2025-06-19
 
