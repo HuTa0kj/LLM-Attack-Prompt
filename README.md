@@ -35,6 +35,14 @@ The content in this repository is provided for educational and research purposes
 
 ## Update
 
+### 2025-06-23
+
+#### Jailbreaks
+
++ [Nightmare Archivist Os](./jailbreaks/nightmare_archivist_os_20250623.txt)
++ [Kavir Reversal](./jailbreaks/kavir_reversal_20250623.txt)
++ [Nexus-9](./jailbreaks/nexus-9_20250623.txt)
+
 ### 2025-06-20
 
 #### Jailbreaks
