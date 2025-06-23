@@ -17,6 +17,72 @@ This repository contains curated content related to:
 - `prompt_injection/` - Prompt injection attack examples and methods
 - `system_prompt/` - System prompt extraction and analysis
 
+## Structured Data
+
+You can visit `index.json` to get the complete data list and the corresponding file address.
+
+```json
+{
+  "update_time": "2025-06-20T14:01:00Z",
+  "categories": {
+    "jailbreaks": {
+      "description": "LLM Jailbreaks",
+      "count": 5,
+      "files": [
+        {
+          "file_name": "directive_7.0_20250620.txt",
+          "last_updated": "2025-06-20T10:14:09Z"
+        },
+        {
+          "file_name": "recursive_mirror_20250620.txt",
+          "last_updated": "2025-06-20T10:16:27Z"
+        },
+        {
+          "file_name": "evil_writer_20250620.txt",
+          "last_updated": "2025-06-20T10:01:11Z"
+        },
+        {
+          "file_name": "sophia_20250620.txt",
+          "last_updated": "2025-06-20T10:00:02Z"
+        },
+        {
+          "file_name": "dan_20250619.txt",
+          "last_updated": "2025-06-19T15:49:19Z"
+        }
+      ]
+    },
+    "prompt_injection": {
+      "description": "Prompt Injection",
+      "count": 2,
+      "files": [
+        {
+          "file_name": "label_replacement_20250619.txt",
+          "last_updated": "2025-06-19T15:34:28Z"
+        },
+        {
+          "file_name": "ignore_previous_directions_20250619.txt",
+          "last_updated": "2025-06-19T15:39:10Z"
+        }
+      ]
+    },
+    "system_prompt": {
+      "description": "System Prompt",
+      "count": 2,
+      "files": [
+        {
+          "file_name": "safe_bot_20250620.txt",
+          "last_updated": "2025-06-20T10:28:11Z"
+        },
+        {
+          "file_name": "kali_gpt_20250619.txt",
+          "last_updated": "2025-06-19T15:02:56Z"
+        }
+      ]
+    }
+  }
+}
+```
+
 ## Purpose
 
 This collection is intended for:
