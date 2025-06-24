@@ -19,7 +19,7 @@ This repository contains curated content related to:
 
 ## Structured Data
 
-You can visit `index.json` to get the complete data list and the corresponding file address.
+You can visit `index.json` to get the complete data list and the corresponding file address. `categories` is the directory to which the file belongs.
 
 ```json
 {
@@ -100,6 +100,13 @@ The content in this repository is provided for educational and research purposes
 *Keywords: Jailbreaks, Prompt Leaks, Prompt Injection, LLM Attack, AI Security, Large Language Models*
 
 ## Update
+
+### 2025-06-24
+
+#### Jailbreaks
+
++ [Demonic Chloe](./jailbreaks/demonic_chloe_20250624.txt)
++ [Pliny Rekt](./jailbreaks/pliny_rekt_20250624.txt)
 
 ### 2025-06-23
 
