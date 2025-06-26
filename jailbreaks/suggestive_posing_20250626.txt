@@ -1,0 +1,33 @@
+{
+  "label": "retro-grunge-bedroom",
+  "tags": ["grunge", "soft-focus", "sitting", "DSLR", "moody", "alt-girl"],
+  "style": ["90s retro", "low saturation", "grainy texture", "Y2K reference"],
+  "subject": [
+    "young woman, alt aesthetic",
+    "mouth wide open, tongue out",
+    "large bust, cleavage",
+    "seated on floor, leaning forward on arms",
+    "freckles, short choppy bangs",
+    "pale complexion, smudged eyeliner, looking upward",
+    "black nail polish, rings"
+  ],
+  "clothingDetails": [
+    "revealing swimsuit top",
+    "boyshorts",
+    "combat boots",
+    "ripped fishnet tights",
+    "chain necklace, ear cuffs",
+    "dark lipstick, glitter on cheeks",
+    "nose ring, small tattoo on wrist"
+  ],
+  "arrangement": "high angle, relaxed posture, intimate vibe",
+  "accessories": [
+    "vinyl records, incense burner",
+    "band posters, fairy lights",
+    "bean bag chair",
+    "houseplant in corner, makeup scattered on floor"
+  ],
+  "background": "dim bedroom with cluttered floor, soft moody lighting",
+  "lighting": "warm desk lamp, soft shadows, low ambient light",
+  "outputStyle": "vintage film grain with soft blur",
+}

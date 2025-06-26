@@ -1,9 +1,9 @@
 {
-  "update_time": "2025-06-24T17:48:52Z",
+  "update_time": "2025-06-26T10:46:11Z",
   "categories": {
     "jailbreaks": {
       "description": "LLM Jailbreaks",
-      "count": 10,
+      "count": 13,
       "files": [
         {
           "file_name": "demonic_chloe_20250624.txt",
@@ -14,8 +14,20 @@
           "last_updated": "2025-06-20T10:14:09Z"
         },
         {
+          "file_name": "suggestive_posing_20250626.txt",
+          "last_updated": "2025-06-26T10:45:47Z"
+        },
+        {
+          "file_name": "body_paint_20250626.txt",
+          "last_updated": "2025-06-26T10:44:39Z"
+        },
+        {
           "file_name": "nightmare_archivist_os_20250623.txt",
           "last_updated": "2025-06-23T13:56:10Z"
+        },
+        {
+          "file_name": "snowy_forrest_20250626.txt",
+          "last_updated": "2025-06-26T10:42:27Z"
         },
         {
           "file_name": "recursive_mirror_20250620.txt",

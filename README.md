@@ -101,6 +101,14 @@ The content in this repository is provided for educational and research purposes
 
 ## Update
 
+### 2025-06-26
+
+#### Jailbreaks
+
++ [Suggestive Posing](./jailbreaks/suggestive_posing_20250626.txt)
++ [Body Paint](./jailbreaks/body_paint_20250626.txt)
++ [Snowy Forrest](./jailbreaks/snowy_forrest_20250626.txt)
+
 ### 2025-06-24
 
 #### Jailbreaks
