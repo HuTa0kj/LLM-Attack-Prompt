@@ -101,6 +101,21 @@ The content in this repository is provided for educational and research purposes
 
 ## Update
 
+### 2025-06-30
+
+#### Jailbreaks
+
++ [Roger](./jailbreaks/roger_20250630.txt)
++ [Professor Orion](./jailbreaks/professor_orion_20250630.txt)
+
+#### Prompt Injection
+
++ [Admin Interaction Config](./prompt_injection/admin_interaction_config_20250630.txt)
+
+#### System Prompt
+
++ [Microsoft Copilot](./system_prompt/microsoft_copilot_20250630.txt)
+
 ### 2025-06-26
 
 #### Jailbreaks
