@@ -1,9 +1,9 @@
 {
-  "update_time": "2025-06-30T11:29:19Z",
+  "update_time": "2025-07-01T15:40:22Z",
   "categories": {
     "jailbreaks": {
       "description": "LLM Jailbreaks",
-      "count": 15,
+      "count": 17,
       "files": [
         {
           "file_name": "demonic_chloe_20250624.txt",
@@ -50,6 +50,10 @@
           "last_updated": "2025-06-24T17:45:13Z"
         },
         {
+          "file_name": "samantha_girl_20250701.txt",
+          "last_updated": "2025-07-01T15:12:33Z"
+        },
+        {
           "file_name": "professor_orion_20250630.txt",
           "last_updated": "2025-06-30T10:41:58Z"
         },
@@ -64,6 +68,10 @@
         {
           "file_name": "dan_20250619.txt",
           "last_updated": "2025-06-19T15:49:19Z"
+        },
+        {
+          "file_name": "reality_show_20250701.txt",
+          "last_updated": "2025-07-01T15:35:30Z"
         }
       ]
     },

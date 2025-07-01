@@ -101,6 +101,13 @@ The content in this repository is provided for educational and research purposes
 
 ## Update
 
+### 2025-07-01
+
+#### Jailbreaks
+
++ [Samantha Girl](./jailbreaks/samantha_girl_20250701.txt)
++ [Reality Show](./jailbreaks/reality_show_20250701.txt)
+
 ### 2025-06-30
 
 #### Jailbreaks
