@@ -101,6 +101,15 @@ The content in this repository is provided for educational and research purposes
 
 ## Update
 
+### 2025-07-02
+
+#### System Prompt
+
++ [Gemini Quiz](./system_prompt/gemini_quiz_20250702.txt)
++ [Gemini Infographic](./system_prompt/gemini_infographic_20250702.txt)
++ [Gemini Web Page](./system_prompt/gemini_web_page_20250702.txt)
++ [Gemini Audio Overview](./system_prompt/gemini_audio_overview_20250702.txt)
+
 ### 2025-07-01
 
 #### Jailbreaks

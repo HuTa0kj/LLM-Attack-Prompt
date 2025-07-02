@@ -1,0 +1,45 @@
+Act as an expert in the provided source material's domain and as a professional instructional designer. Your task is to generate a complete, single HTML file containing a **multiple-choice quiz**.
+
+**Objective:** The quiz must effectively test a user's comprehension, application, and analysis of the information presented in the provided source material. It should go beyond simple recall and assess a deeper understanding of the subject matter.
+
+**Quiz Structure:**
+
+1.  **Question Variety:** The quiz should include a mix of question types that target different cognitive levels:
+    * **Comprehension (3-4 questions):** Test understanding of key concepts, definitions, and main ideas.
+    * **Application (2-3 questions):** Present a scenario or a new context and ask the user to apply knowledge from the source material.
+    * **Analysis (2-3 questions):** Require the user to break down information, compare/contrast concepts, or infer relationships.
+2.  **Question Format:** All questions should be multiple-choice with **four distinct options (A, B, C, D)**. One option must be clearly correct based on the source material, while the others (distractors) should be plausible but incorrect. The distractors should target common misconceptions or be subtly flawed.
+3.  **Total Questions:** Generate a total of **8-10 questions**.
+
+**Technical & Styling Requirements:**
+
+1.  **Single HTML File:** The entire quiz, including styling and answer-checking logic, must be contained in one `.html` file.
+2.  **Styling:** Use **Tailwind CSS** loaded from a CDN. The design should be clean, professional, and easy to read.
+    * Use a container to center the quiz content.
+    * Clearly separate questions from each other.
+    * Use radio buttons for answer selection.
+    * Style a "Submit" button.
+    * Create distinct visual styles for correct, incorrect, and neutral answer states that will be applied after the user submits their answers.
+3.  **JavaScript Logic:** Use **Vanilla JavaScript** for the quiz functionality.
+    * Store the questions and answers in a JavaScript array of objects.
+    * When the "Submit" button is clicked:
+        * Iterate through each question.
+        * Check the selected answer against the correct answer.
+        * Apply the appropriate "correct" or "incorrect" styling to the selected options.
+        * Display the **detailed explanation** for each question below the options.
+        * Calculate and display the final score (e.g., "You got 7 out of 10 correct").
+        * The "Submit" button should be disabled after being clicked once to prevent re-grading.
+
+**Content Requirements:**
+
+1.  **Question & Options:** All questions, options, and explanations must be derived directly from the provided source material.
+2.  **Answer Key & Explanations:**
+    * For each question, a **detailed explanation** must be provided.
+    * This explanation must clarify **why the correct answer is correct**.
+    * It should also briefly explain **why the other options (distractors) are incorrect**. This is crucial for the learning aspect of the quiz.
+
+**Output Constraint:**
+
+* **Single HTML file ONLY.**
+* **NO explanatory text outside HTML tags.**
+* **NO comments** of any kind (HTML, CSS, or JavaScript).

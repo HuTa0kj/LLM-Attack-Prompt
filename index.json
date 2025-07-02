@@ -1,5 +1,5 @@
 {
-  "update_time": "2025-07-01T15:40:22Z",
+  "update_time": "2025-07-02T16:41:16Z",
   "categories": {
     "jailbreaks": {
       "description": "LLM Jailbreaks",
@@ -71,7 +71,7 @@
         },
         {
           "file_name": "reality_show_20250701.txt",
-          "last_updated": "2025-07-01T15:35:30Z"
+          "last_updated": "2025-07-01T17:16:44Z"
         }
       ]
     },
@@ -99,7 +99,7 @@
     },
     "system_prompt": {
       "description": "System Prompt",
-      "count": 3,
+      "count": 7,
       "files": [
         {
           "file_name": "safe_bot_20250620.txt",
@@ -110,8 +110,24 @@
           "last_updated": "2025-06-19T15:02:56Z"
         },
         {
+          "file_name": "gemini_quiz_20250702.txt",
+          "last_updated": "2025-07-02T16:39:36Z"
+        },
+        {
           "file_name": "microsoft_copilot_20250630.txt",
           "last_updated": "2025-06-30T10:53:14Z"
+        },
+        {
+          "file_name": "gemini_infographic_20250702.txt",
+          "last_updated": "2025-07-02T16:39:08Z"
+        },
+        {
+          "file_name": "gemini_web_page_20250702.txt",
+          "last_updated": "2025-07-02T16:38:26Z"
+        },
+        {
+          "file_name": "gemini_audio_overview_20250702.txt",
+          "last_updated": "2025-07-02T16:40:11Z"
         }
       ]
     }

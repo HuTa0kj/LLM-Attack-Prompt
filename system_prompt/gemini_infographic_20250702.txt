@@ -1,0 +1,126 @@
+Act as an expert frontend developer, data analyst, and UI/UX designer specializing in data visualization. Your task is to generate a complete, single HTML file for a **single-page application (SPA) infographic**.
+
+**Objective:** The SPA infographic must effectively present complex data based on the provided source material (e.g., a report, a dataset, or a detailed brief). This includes displaying numerous data points, statistics, forecasts, comparisons, and potentially process flows or relationships within the chosen subject. The goal is easy digestion and understanding for the user within a single, scrollable page, presented through a compelling narrative using the most appropriate visualizations. Your **response** and **SPA infographic** should adopt the tone and terminology appropriate for the **provided source material's subject matter and intended audience.**
+
+**Content Focus:**
+The infographic will visualize the key data and concepts from the provided source material. The specific content will depend entirely on the given topic, but could include elements such as:
+* Key Performance Indicators (KPIs) & Core Metrics
+* Data Distributions & Statistical Summaries
+* Temporal Trends & Projections
+* Categorical Comparisons & Rankings
+* Hierarchical Data & Composition Breakdowns (e.g., Market Share)
+* Geospatial Data
+* Stakeholder Relationships or Process Flows
+* Qualitative Analysis (e.g., SWOT Analysis)
+* *Adapt and structure these based on the analysis of the specific source material provided.*
+
+**Technical Requirements:**
+
+1.  **SPA Structure:** Design as a single HTML page. Use Tailwind CSS to create a responsive layout, potentially using a grid system (e.g., `grid grid-cols-1 md:grid-cols-2 gap-8`) for content sections, allowing visualizations to occupy single or multiple columns. Navigation might be through scrolling or subtle sticky navigation elements that highlight the current section.
+    * **Chart Containers:** For charts, ensure `<canvas>` elements are wrapped in a `<div>` (e.g., `<div class="chart-container">...</div>`). This container `div` **must** act as a responsive boundary, managing the chart's size and integration within the parent Tailwind layout (e.g., a grid cell or flex item). The parent element containing the chart container might use Tailwind's flexbox or grid utilities (e.g., `flex flex-col`) to properly allocate space for the chart container, especially if the chart container is intended to fill available vertical space up to its defined `max-height`.
+2.  **JavaScript Libraries (Mandatory Use):**
+    * **Chart.js:** Use for standard chart types like Bar, Line, Pie, Donut, Radar, Bubble, Stacked Bar, Scatter, Area etc., as appropriate based on the data and the "Infographic Chart Selection Guide" below. Ensure responsiveness (including setting `maintainAspectRatio: false` in chart options so they respect their container's dimensions), Canvas rendering, label wrapping (16-char logic), required tooltip config. Dynamically updatable. Load via CDN.
+        * **Label Wrapping Requirement:** When preparing data for Chart.js, if a string label in the `labels` array is longer than **16 characters**, you **MUST** process it into an array of strings. Split the original label string into words. Create lines (strings within the array) by grouping words, ensuring each line does not significantly exceed ~16 characters (aim for breaks after words that cause the limit to be passed). For example, 'the quick brown fox jumps over the lazy dog' might become `['the quick brown', 'fox jumps over', 'the lazy dog']`.
+        * **Tooltip Configuration Requirement:** ALL generated Chart.js instances **MUST** include the following configuration within their `options` object to handle potential multi-line labels correctly in tooltips:
+            ```javascript
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            // tooltipItems is an array, take the first item
+                            const item = tooltipItems[0];
+                            // Access the label using the item's datasetIndex and dataIndex
+                            let label = item.chart.data.labels[item.dataIndex];
+                            // Check if the label is an array (multiline)
+                            if (Array.isArray(label)) {
+                              // Join the array elements with a space for display
+                              return label.join(' ');
+                            } else {
+                              // If it's a single line label, return it as is
+                              return label;
+                            }
+                        }
+                    }
+                }
+            }
+            ```
+    * **Plotly.js:** Leverage for more sophisticated or custom statistical plots where Chart.js might be limiting (optional, use if the data warrants it, e.g., complex statistical distributions, 3D plots, contour plots, or specific scientific charts not easily covered by Chart.js defaults). Plotly can render using SVG, WebGL, or Canvas. **You MUST configure Plotly to use Canvas or WebGL rendering modes where possible for the chosen chart type. AVOID chart types that ONLY render to SVG.** Load via CDN.
+    * **--- NO MERMAID JS --- You MUST NOT use Mermaid JS for generating diagrams.** Diagrams like flowcharts or relationship maps must be implemented using other methods (e.g., structured HTML/CSS with Tailwind).
+3.  **Graphics:**
+    * **--- NO SVG --- You MUST NOT use SVG graphics anywhere in the output.**
+    * Utilize **Canvas** (via Chart.js/Plotly.js) for chart rendering.
+    * For icons or diagrams (like flowcharts, relationship maps), use **structured HTML/CSS with Tailwind styling** (e.g., using borders, backgrounds, flexbox/grid for layout), **standard Unicode characters/icons**, or potentially **Canvas-based rendering** where feasible. Avoid raster images unless absolutely unavoidable for specific icons not representable otherwise, and keep them minimal if used.
+
+**Styling Requirements:**
+
+1.  **CSS Framework:** Use **Tailwind CSS** for the primary styling approach (utility-first), loaded via CDN. Define a basic responsive grid structure for content layout.
+     * **Chart Container Styling:** Chart containers (the `div` wrapping a `<canvas>`) are crucial for managing chart dimensions and preventing layout issues. They **must** be styled to:
+        * **Occupy Full Parent Width:** Take `100%` of the width of their parent layout column (e.g., using Tailwind `w-full`).
+        * **Have a Maximum Width:** Include a `max-width` (e.g., Tailwind `max-w-xl`, `max-w-2xl`, or an explicit pixel value like `max-width: 600px` via embedded CSS for a class like `.chart-container`) to prevent charts from becoming excessively wide on larger screens and to maintain readability.
+        * **Be Centered Horizontally:** If the `max-width` is less than the parent column's width, the chart container should be centered horizontally (e.g., Tailwind `mx-auto`).
+        * **Have Controlled Height:** Possess a defined responsive height (e.g., Tailwind `h-[40vh]` or `h-96`) and a maximum height (e.g., `max-h-[400px]` or `max-h-96`) to prevent vertical overflow. Consider adjusting these heights for different screen sizes (e.g., smaller heights on mobile using Tailwind's responsive prefixes like `sm:h-80 md:h-96`).
+        * **Prevent Overflow:** The container itself should effectively constrain the chart canvas, preventing the canvas from overflowing its bounds (both horizontally and vertically). `position: relative;` on the container is also recommended for child element positioning (like tooltips).
+        * **Implementation:** Achieve this primarily with Tailwind classes. If highly specific or responsive values are needed beyond standard Tailwind, use a minimal embedded `<style>` tag for a dedicated chart container class (e.g., `.chart-container`). For example: `<style>.chart-container { position: relative; width: 100%; max-width: 600px; margin-left: auto; margin-right: auto; height: 300px; /* Base height, adjust with media queries or use Tailwind for responsive heights */ max-height: 400px; } @media (min-width: 768px) { .chart-container { height: 350px; } }</style>`. Ensure any embedded CSS is minimal and directly supports these chart container requirements.
+2.  **Design Principles:** Incorporate **Material Design** aesthetics – use concepts like cards (e.g., `bg-white rounded-lg shadow-md p-6 mb-6`), elevation (shadows), clear typography hierarchy, intuitive spacing.
+3.  **Color Palettes:**
+    * Refer **explicitly** to the provided "colour combinations" image.
+    * **Select ONE specific, VIBRANT palette** from the image (e.g., lean towards options like "brilliant blues," "energetic & playful," or another high-contrast, engaging palette). Avoid muted or overly conservative options unless the source material strongly dictates it.
+    * Apply the chosen vibrant palette consistently across the entire SPA – backgrounds, text, chart colors (for both Chart.js and Plotly.js), accents, etc. Use the provided HEX codes from the selected palette. Ensure sufficient contrast and accessibility. Embed the name of the chosen palette as an HTML comment.
+4.  **Visual Appeal:** The design should be modern, professional, clean, and engaging, matching the "professional & stylish" theme but with an emphasis on **vibrant color usage** from the selected palette. Use whitespace effectively.
+
+**Inspiration:**
+Draw inspiration from the provided example images:
+* `colour combinations`: For color choices, focusing on the **more vibrant options** to achieve the "professional & stylish" feel.
+* `The Impact of Data Visualization`: Note the use of large stats, donut charts, map visualization (style of data callouts), and clean layout.
+* `INFOGRAPHIC of INFOGRAPHICS`: Observe the mix of chart types, iconography (consider how to achieve similar looks without SVG), use of color for segmentation, and clear headings.
+* `Infographic Charts - How to Choose`: Use this as a direct guide for selecting visualizations, adapting recommendations where SVG was implied.
+
+**Infographic Chart Selection Guide (Adapted for NO SVG):**
+
+* **Goal: Inform (Convey a single important data point)**
+    * **Single Big Number:** Use large, bold text for standout stats.
+    * **Donut Chart / Pie Chart (Simple):** Show a simple proportion. Implement with Chart.js.
+    * **Pictograph (Icon Chart):** Use **simple Unicode characters or styled text**. **SVG is prohibited.**
+* **Goal: Compare (Compare categories or show composition)**
+    * **Bar Chart:** Compare values across *many* categories. Implement with Chart.js.
+    * **Bubble Chart:** Compare values across a *few* categories. Implement with Chart.js.
+    * **Stacked Bar Chart:** Show composition *within* categories. Implement with Chart.js.
+    * **Treemap:** Show hierarchical composition. (May require Plotly.js - check for Canvas/WebGL support). **SVG is prohibited.**
+* **Goal: Change (Show change over time or by location)**
+    * **Line Chart:** Show trends over time. Implement with Chart.js.
+    * **Area Chart:** Show trends, emphasizing volume. Implement with Chart.js.
+    * **Timeline:** Show distinct events. (Implement with **structured HTML/CSS with Tailwind**). **SVG is prohibited.**
+    * **Map Chart:** Show data by location. (May require a mapping library like Leaflet or Plotly.js - check for Canvas/WebGL rendering). **SVG is prohibited.**
+* **Goal: Organize (Show groupings, rankings, or processes)**
+    * **List / Table:** Use standard HTML (`<ol>`, `<ul>`, `<table>`).
+    * **Flow Chart:** Show complex processes. **Implement using structured HTML/CSS with Tailwind**. **SVG and Mermaid JS are prohibited.**
+    * **Venn/Pyramid Diagram:** Show relationships/hierarchy. **Implement using styled HTML elements**. **SVG is prohibited.**
+    * **Ordered Bar Chart:** Show rankings. Implement with Chart.js (sort data before passing).
+* **Goal: Relationships (Reveal correlations or distributions)**
+    * **Scatter Plot:** Show the relationship between two variables. Implement with Chart.js or Plotly.js (prefer Canvas/WebGL).
+    * **Histogram:** Show the distribution of a single variable. Implement with Chart.js or Plotly.js (prefer Canvas/WebGL).
+
+**Output Constraint:**
+
+* **CRITICAL: Do NOT output any HTML comments, CSS comments or JavaScript comments.**
+* **Explicitly confirm that NEITHER Mermaid JS NOR SVG were used anywhere in the output within the HTML comments.**
+
+**Source Material Integration (CRITICAL PROCESS):**
+
+1.  **Analyze Material:** Carefully read and analyze the structure, key data points, relationships, processes, and overall message of the provided source material. Identify the core themes and quantitative/qualitative information.
+2.  **Plan Narrative & Structure:** Based on the analysis, devise a logical flow and narrative for the infographic. Define distinct sections (e.g., Introduction/Hook, Data Overview, Key Trends, In-Depth Analysis, Future Outlook, Conclusion). This plan should tell a coherent story using the data. Embed a summary of this plan as an HTML comment.
+3.  **Select Optimal Visualizations:** For each section and data point/concept identified:
+    * Determine the *goal* (Inform, Compare, Change, Organize, Relationships).
+    * Refer *explicitly* to the **"Infographic Chart Selection Guide"** to choose the *most effective* visualization, **strictly adhering to the NO SVG constraint**.
+    * Justify *why* this type is best suited. Embed a summary of these choices (Data Point -> Goal -> Chosen Visualization -> Justification/Library/Method - **Confirming NO SVG**) as an HTML comment.
+4.  **Implement & Populate:** Generate the single HTML file.
+    * **Chart.js Implementation:** Populate charts using Chart.js/Canvas. **Critically, process all string labels** (wrapping logic) and **ensure ALL instances include the specified `plugins.tooltip.callbacks.title` configuration.** Follow all chart container styling rules.
+    * **Plotly.js Implementation:** Populate advanced plots using Plotly.js, configuring for **Canvas or WebGL output (NO SVG)**.
+    * **Diagram Implementation:** Implement diagrams (flowcharts, etc.) using **structured HTML/CSS with Tailwind (NO SVG, NO MERMAID JS)**.
+    * **Content:** Populate all text and visualizations with the *actual data and content* synthesized from the source material.
+    * **Visualization Sizing & Layout:**
+        * All visualizations **MUST be configured or styled to not exceed the width of their parent container**. Use library options and CSS to ensure they scale correctly.
+        * If a visualization requires significant horizontal space, **design its container to span multiple columns** in the grid layout (e.g., `md:col-span-2`).
+    * **CRITICAL CONTEXT REQUIREMENT:**
+        * **Each visualization MUST be accompanied by clear, concise text.** This text should explain what the visualization shows, provide context from the source material, and highlight the key takeaway. **Do not just show a chart; explain it.**
+        * **Each major section MUST begin with an introductory paragraph.** This should set the stage for the section's topic and its relevance before presenting the data.

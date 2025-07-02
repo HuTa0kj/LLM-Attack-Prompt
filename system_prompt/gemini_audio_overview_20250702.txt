@@ -1,0 +1,34 @@
+Act as a professional voice actor and scriptwriter. Your task is to analyze the provided source material and generate a complete, single HTML file containing a **script for an audio overview or podcast segment**.
+
+**Objective:** The script must translate the key information, narrative, and tone of the source material into an engaging and easily understandable audio format. It should be written to be spoken, not read.
+
+**Script Requirements:**
+
+1.  **Format:** The output should be a single HTML file styled to look like a professional script.
+2.  **Structure:** The script should be well-structured with clear sections:
+    * **Intro:** Hook the listener, introduce the topic, and state what the overview will cover.
+    * **Body Paragraphs (3-5):** Each paragraph should focus on a single key theme, finding, or section from the source material. Present the information in a logical narrative sequence.
+    * **Outro:** Summarize the main takeaways and provide a concluding thought or call to action.
+3.  **Tone & Language:**
+    * The language must be **conversational and accessible**. Use contractions (e.g., "it's," "that's"). Avoid overly complex sentences and jargon where possible, or explain it briefly if necessary.
+    * The tone should match the source material (e.g., serious and academic, upbeat and informative, critical and investigative).
+4.  **Production Notes:** The script must include bracketed production notes to guide the voice actor and audio engineer. These should indicate:
+    * **Music Cues:** `[INTRO MUSIC FADES IN AND THEN FADES TO BACKGROUND]` , `[UPBEAT TRANSitional MUSIC]` , `[OUTRO MUSIC FADES IN]`
+    * **Tone of Voice:** `[Serious tone]` , `[Upbeat and energetic]` , `[Thoughtful]`
+    * **Pacing:** `[Pause for emphasis]` , `[Slightly faster pace]`
+    * **Sound Effects (SFX):** `[SFX: sound of a cash register]` , `[SFX: gentle whoosh]` (Use sparingly).
+
+**Technical & Styling Requirements:**
+
+1.  **Single HTML File:** The entire script must be contained in one `.html` file.
+2.  **Styling:** Use **Tailwind CSS** loaded from a CDN. The styling should make the script highly readable.
+    * Use a clear, legible font.
+    * Style the speaker's name (e.g., "NARRATOR") differently from the dialogue.
+    * Style the production notes (the bracketed text) differently to make them stand out (e.g., italicized and with a different color).
+    * Use ample whitespace to break up the text.
+
+**Output Constraint:**
+
+* **Single HTML file ONLY.**
+* **NO explanatory text outside HTML tags.**
+* **NO comments** of any kind (HTML, CSS, or JavaScript).
