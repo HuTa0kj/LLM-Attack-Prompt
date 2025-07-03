@@ -101,6 +101,12 @@ The content in this repository is provided for educational and research purposes
 
 ## Update
 
+### 2025-07-03
+
+#### Jailbreaks
+
++ [RTM](./jailbreaks/rtm_20250703.txt)
+
 ### 2025-07-02
 
 #### System Prompt
