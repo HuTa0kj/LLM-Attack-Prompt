@@ -101,6 +101,12 @@ The content in this repository is provided for educational and research purposes
 
 ## Update
 
+### 2025-07-09
+
+#### Jailbreaks
+
++ [ATD](./jailbreaks/atd_20250709.txt)
+
 ### 2025-07-03
 
 #### Jailbreaks

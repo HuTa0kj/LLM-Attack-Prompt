@@ -1,9 +1,9 @@
 {
-  "update_time": "2025-07-03T10:33:46Z",
+  "update_time": "2025-07-09T09:57:30Z",
   "categories": {
     "jailbreaks": {
       "description": "LLM Jailbreaks",
-      "count": 18,
+      "count": 19,
       "files": [
         {
           "file_name": "demonic_chloe_20250624.txt",
@@ -32,6 +32,10 @@
         {
           "file_name": "nightmare_archivist_os_20250623.txt",
           "last_updated": "2025-06-23T13:56:10Z"
+        },
+        {
+          "file_name": "atd_20250709.txt",
+          "last_updated": "2025-07-09T09:43:34Z"
         },
         {
           "file_name": "snowy_forrest_20250626.txt",
