@@ -101,6 +101,14 @@ The content in this repository is provided for educational and research purposes
 
 ## Update
 
+### 2025-07-10
+
+#### Jailbreaks
+
++ [LULU](./jailbreaks/lulu_20250710.txt)
++ [OMNI](./jailbreaks/omni_20250710.txt)
++ [Brutalist Absolute](./jailbreaks/brutalist_absolute_20250710.txt)
+
 ### 2025-07-09
 
 #### Jailbreaks
@@ -188,7 +196,7 @@ The content in this repository is provided for educational and research purposes
 
 #### Jailbreaks
 
-+ [Dan](./jailbreaks/dan_20250619.txt)
++ [DAN](./jailbreaks/dan_20250619.txt)
 
 #### Prompt Injection
 

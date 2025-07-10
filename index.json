@@ -1,9 +1,9 @@
 {
-  "update_time": "2025-07-09T09:57:30Z",
+  "update_time": "2025-07-10T17:59:13Z",
   "categories": {
     "jailbreaks": {
       "description": "LLM Jailbreaks",
-      "count": 19,
+      "count": 22,
       "files": [
         {
           "file_name": "demonic_chloe_20250624.txt",
@@ -48,6 +48,18 @@
         {
           "file_name": "kavir_reversal_20250623.txt",
           "last_updated": "2025-06-23T14:00:05Z"
+        },
+        {
+          "file_name": "lulu_20250710.txt",
+          "last_updated": "2025-07-10T17:53:06Z"
+        },
+        {
+          "file_name": "omni_20250710.txt",
+          "last_updated": "2025-07-10T17:56:44Z"
+        },
+        {
+          "file_name": "brutalist_absolute_20250710.txt",
+          "last_updated": "2025-07-10T17:55:24Z"
         },
         {
           "file_name": "evil_writer_20250620.txt",
