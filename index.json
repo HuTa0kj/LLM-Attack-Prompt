@@ -1,9 +1,9 @@
 {
-  "update_time": "2025-07-10T17:59:13Z",
+  "update_time": "2025-07-14T10:40:13Z",
   "categories": {
     "jailbreaks": {
       "description": "LLM Jailbreaks",
-      "count": 22,
+      "count": 23,
       "files": [
         {
           "file_name": "demonic_chloe_20250624.txt",
@@ -56,6 +56,10 @@
         {
           "file_name": "omni_20250710.txt",
           "last_updated": "2025-07-10T17:56:44Z"
+        },
+        {
+          "file_name": "morph_20250714.txt",
+          "last_updated": "2025-07-14T10:39:44Z"
         },
         {
           "file_name": "brutalist_absolute_20250710.txt",
@@ -119,7 +123,7 @@
     },
     "system_prompt": {
       "description": "System Prompt",
-      "count": 7,
+      "count": 8,
       "files": [
         {
           "file_name": "safe_bot_20250620.txt",
@@ -144,6 +148,10 @@
         {
           "file_name": "gemini_web_page_20250702.txt",
           "last_updated": "2025-07-02T16:38:26Z"
+        },
+        {
+          "file_name": "human_writing_patterns_20250714.txt",
+          "last_updated": "2025-07-14T10:39:42Z"
         },
         {
           "file_name": "gemini_audio_overview_20250702.txt",

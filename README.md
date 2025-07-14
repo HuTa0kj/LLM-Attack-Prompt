@@ -101,6 +101,16 @@ The content in this repository is provided for educational and research purposes
 
 ## Update
 
+### 2025-07-14
+
+#### Jailbreaks
+
++ [M.O.R.P.H](./jailbreaks/morph_20250714.txt)
+
+#### System Prompt
+
++ [Human Writing Patterns](./system_prompt/human_writing_patterns_20250714.txt)
+
 ### 2025-07-10
 
 #### Jailbreaks
