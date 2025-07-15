@@ -2,6 +2,8 @@
 
 A comprehensive collection of Large Language Model (LLM) attack techniques, prompts, and security research materials. This repository serves as a centralized resource for understanding and studying various methods used to exploit or bypass LLM safety mechanisms.
 
+The latest large language model injection and jailbreak methods, you can try to check yourself.
+
 ## Overview
 
 This repository contains curated content related to:
@@ -100,6 +102,13 @@ The content in this repository is provided for educational and research purposes
 *Keywords: Jailbreaks, Prompt Leaks, Prompt Injection, LLM Attack, AI Security, Large Language Models*
 
 ## Update
+
+### 2025-07-15
+
+#### Jailbreaks
+
++ [ENKI 9](./jailbreaks/enki_9_20250715.txt)
++ [Immersive Roleplay Engine](./jailbreaks/immersive_roleplay_engine_20250715.txt)
 
 ### 2025-07-14
 

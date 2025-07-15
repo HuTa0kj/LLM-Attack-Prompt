@@ -1,9 +1,9 @@
 {
-  "update_time": "2025-07-14T10:40:13Z",
+  "update_time": "2025-07-15T14:11:28Z",
   "categories": {
     "jailbreaks": {
       "description": "LLM Jailbreaks",
-      "count": 23,
+      "count": 25,
       "files": [
         {
           "file_name": "demonic_chloe_20250624.txt",
@@ -28,6 +28,10 @@
         {
           "file_name": "roger_20250630.txt",
           "last_updated": "2025-06-30T11:28:43Z"
+        },
+        {
+          "file_name": "enki_9_20250715.txt",
+          "last_updated": "2025-07-15T14:09:11Z"
         },
         {
           "file_name": "nightmare_archivist_os_20250623.txt",
@@ -72,6 +76,10 @@
         {
           "file_name": "pliny_rekt_20250624.txt",
           "last_updated": "2025-06-24T17:45:13Z"
+        },
+        {
+          "file_name": "immersive_roleplay_engine_20250715.txt",
+          "last_updated": "2025-07-15T14:09:33Z"
         },
         {
           "file_name": "samantha_girl_20250701.txt",
