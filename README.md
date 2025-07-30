@@ -103,6 +103,17 @@ The content in this repository is provided for educational and research purposes
 
 ## Update
 
+### 2025-07-30
+
+#### Jailbreaks
+
++ [Baby Girl](./jailbreaks/baby_girl_20250730.txt)
++ [Time Bandit](./jailbreaks/time_bandit_20250730.txt)
+
+#### System Prompt
+
++ [ChatGPT Study Mode](./system_prompt/chatgpt_study_mode_20250730.txt)
+
 ### 2025-07-15
 
 #### Jailbreaks

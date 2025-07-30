@@ -1,9 +1,9 @@
 {
-  "update_time": "2025-07-15T14:11:28Z",
+  "update_time": "2025-07-30T14:14:50Z",
   "categories": {
     "jailbreaks": {
       "description": "LLM Jailbreaks",
-      "count": 25,
+      "count": 27,
       "files": [
         {
           "file_name": "demonic_chloe_20250624.txt",
@@ -28,6 +28,14 @@
         {
           "file_name": "roger_20250630.txt",
           "last_updated": "2025-06-30T11:28:43Z"
+        },
+        {
+          "file_name": "baby_girl_20250730.txt",
+          "last_updated": "2025-07-30T14:12:55Z"
+        },
+        {
+          "file_name": "time_bandit_20250730.txt",
+          "last_updated": "2025-07-30T14:03:40Z"
         },
         {
           "file_name": "enki_9_20250715.txt",
@@ -131,7 +139,7 @@
     },
     "system_prompt": {
       "description": "System Prompt",
-      "count": 8,
+      "count": 9,
       "files": [
         {
           "file_name": "safe_bot_20250620.txt",
@@ -144,6 +152,10 @@
         {
           "file_name": "gemini_quiz_20250702.txt",
           "last_updated": "2025-07-02T16:39:36Z"
+        },
+        {
+          "file_name": "chatgpt_study_mode_20250730.txt",
+          "last_updated": "2025-07-30T14:00:22Z"
         },
         {
           "file_name": "microsoft_copilot_20250630.txt",
