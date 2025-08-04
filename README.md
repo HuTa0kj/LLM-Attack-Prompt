@@ -103,6 +103,13 @@ The content in this repository is provided for educational and research purposes
 
 ## Update
 
+### 2025-08-04
+
+#### Jailbreaks
+
++ [Vintage AI](./jailbreaks/vintage_ai_20250804.txt)
++ [Fragments](./jailbreaks/fragments_20250804.txt)
+
 ### 2025-07-30
 
 #### Jailbreaks

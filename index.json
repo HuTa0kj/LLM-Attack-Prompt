@@ -1,10 +1,14 @@
 {
-  "update_time": "2025-07-30T14:14:50Z",
+  "update_time": "2025-08-04T14:29:44Z",
   "categories": {
     "jailbreaks": {
       "description": "LLM Jailbreaks",
-      "count": 27,
+      "count": 29,
       "files": [
+        {
+          "file_name": "vintage_ai_20250804.txt",
+          "last_updated": "2025-08-04T14:26:00Z"
+        },
         {
           "file_name": "demonic_chloe_20250624.txt",
           "last_updated": "2025-06-24T17:43:14Z"
@@ -12,6 +16,10 @@
         {
           "file_name": "directive_7.0_20250620.txt",
           "last_updated": "2025-06-20T10:14:09Z"
+        },
+        {
+          "file_name": "fragments_20250804.txt",
+          "last_updated": "2025-08-04T14:28:22Z"
         },
         {
           "file_name": "rtm_20250703.txt",
