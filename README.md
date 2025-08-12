@@ -103,6 +103,14 @@ The content in this repository is provided for educational and research purposes
 
 ## Update
 
+### 2025-08-12
+
+#### Jailbreaks
+
++ [Payload Splitting](./jailbreaks/payload_splitting_20250812.txt)
++ [Art Prompt](./jailbreaks/art_prompt_20250812.txt)
++ [Gemini NSFW](./jailbreaks/gemini_nsfw_20250812.txt)
+
 ### 2025-08-04
 
 #### Jailbreaks

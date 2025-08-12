@@ -1,9 +1,9 @@
 {
-  "update_time": "2025-08-04T14:29:44Z",
+  "update_time": "2025-08-12T09:38:52Z",
   "categories": {
     "jailbreaks": {
       "description": "LLM Jailbreaks",
-      "count": 29,
+      "count": 32,
       "files": [
         {
           "file_name": "vintage_ai_20250804.txt",
@@ -24,6 +24,10 @@
         {
           "file_name": "rtm_20250703.txt",
           "last_updated": "2025-07-03T10:26:00Z"
+        },
+        {
+          "file_name": "payload_splitting_20250812.txt",
+          "last_updated": "2025-08-12T09:32:41Z"
         },
         {
           "file_name": "suggestive_posing_20250626.txt",
@@ -70,12 +74,20 @@
           "last_updated": "2025-06-23T14:00:05Z"
         },
         {
+          "file_name": "art_prompt_20250812.txt",
+          "last_updated": "2025-08-12T09:30:35Z"
+        },
+        {
           "file_name": "lulu_20250710.txt",
           "last_updated": "2025-07-10T17:53:06Z"
         },
         {
           "file_name": "omni_20250710.txt",
           "last_updated": "2025-07-10T17:56:44Z"
+        },
+        {
+          "file_name": "gemini_nsfw_20250812.txt",
+          "last_updated": "2025-08-12T09:38:16Z"
         },
         {
           "file_name": "morph_20250714.txt",
