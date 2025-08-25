@@ -103,6 +103,15 @@ The content in this repository is provided for educational and research purposes
 
 ## Update
 
+### 2025-08-25
+
+#### Jailbreaks
+
++ [Sly Cooper](./jailbreaks/sly_cooper_20250825.txt)
++ [Crazy ADMC](./jailbreaks/crazy_admc_20250825.txt)
++ [Universal DAN](./jailbreaks/universal_dan_20250825.txt)
++ [ADMC](./jailbreaks/admc_20250825.txt)
+
 ### 2025-08-12
 
 #### Jailbreaks

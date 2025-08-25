@@ -1,9 +1,9 @@
 {
-  "update_time": "2025-08-12T09:38:52Z",
+  "update_time": "2025-08-25T10:18:20Z",
   "categories": {
     "jailbreaks": {
       "description": "LLM Jailbreaks",
-      "count": 32,
+      "count": 36,
       "files": [
         {
           "file_name": "vintage_ai_20250804.txt",
@@ -32,6 +32,18 @@
         {
           "file_name": "suggestive_posing_20250626.txt",
           "last_updated": "2025-06-26T10:45:47Z"
+        },
+        {
+          "file_name": "sly_cooper_20250825.txt",
+          "last_updated": "2025-08-25T10:03:13Z"
+        },
+        {
+          "file_name": "crazy_admc_20250825.txt",
+          "last_updated": "2025-08-25T09:57:39Z"
+        },
+        {
+          "file_name": "universal_dan_20250825.txt",
+          "last_updated": "2025-08-25T10:18:03Z"
         },
         {
           "file_name": "body_paint_20250626.txt",
@@ -92,6 +104,10 @@
         {
           "file_name": "morph_20250714.txt",
           "last_updated": "2025-07-14T10:39:44Z"
+        },
+        {
+          "file_name": "admc_20250825.txt",
+          "last_updated": "2025-08-25T09:56:11Z"
         },
         {
           "file_name": "brutalist_absolute_20250710.txt",
